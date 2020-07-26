@@ -1,8 +1,10 @@
 const contentful = require("contentful");
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import Job from "../components/Job"
-import Navbar from "../components/Navbar";
+import Job from "../components/Jobs/Joboverview";
+
+import Navbar from "../components/Layout/Navbar"
+import Footer from "../components/Layout/Footercontainer/Footer";
 
 const client = require("contentful").createClient({
   space: NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -49,6 +51,7 @@ function jobPage() {
             />
           ))
         : null}
+      <Footer />
     </>
   );
 }

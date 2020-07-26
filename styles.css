@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .jobpage__container__categories__container__category {
   display: inline-block;
   padding: 5px 10px;
@@ -9,16 +16,78 @@
 }
 
 .nav__bar__container {
-  background-color: blue;
+  background-color: red;
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
   padding: 10px;
+  max-width: 960px;
+  margin: auto;
 }
 
 .nav__bar_item {
   color: white;
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
+}
+
+.footer__container_wrapper{
+  max-width: 960px;
+  margin: auto;
+
+}
+
+.footer__top__container{
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+ 
+
+
+}
+
+.footer__top__item {
+  cursor: pointer;
+  color: white;
+  list-style: none;
+
+}
+
+.footer__bottom__container{
+  background-color: red;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#999;
+ 
+  
+
+
+}
+.footer__bottom__container_list{
+  display: flex;
+  justify-content: space-between;
+  
+
+
+}
+.footer__bottom__container_list_item{
+  color: white;
+  list-style: none;
+  font-size: 0.65rem;
+  cursor: pointer;
+
+}
+.footer__bottom__container_list_copyright{
+  color: white;
+  list-style: none;
+  font-size: 0.85rem;
 }
