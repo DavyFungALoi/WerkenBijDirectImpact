@@ -4,6 +4,7 @@ import * as contentful from "contentful";
 import Job from "../../components/Jobs/Joboverview";
 import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footercontainer/Footer";
+import styles from "../../components/Jobs/Joboverview.module.css"
 const client = contentful.createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFULSPACE,
   accessToken: process.env.NEXT_PUBLIC_CONTENTFULAPI,
@@ -37,7 +38,7 @@ function jobPage() {
       <div>
         <Navbar />
       </div>
-      <div className="joboverview__container">
+      <div className={styles.joboverview__container}>
       <div>Job Overview</div>
       {jobs.length > 0
         ? jobs.map((job) => (

@@ -2,6 +2,7 @@ import React from "react";
 import moment from "moment";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from './Joboverview.module.css'
 
 export default function job(props) {
   const router = useRouter();

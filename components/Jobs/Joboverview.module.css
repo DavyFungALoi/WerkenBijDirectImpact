@@ -1,0 +1,13 @@
+.joboverview__container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.jobpage__container__categories__container__category {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 4px 2px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #999;
+}
