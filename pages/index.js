@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import Job from "../components/Job"
-import Navbar from "../components/Navbar";
 import * as contentful from "contentful";
-
+import Job from "../components/Jobs/Joboverview";
+import Navbar from "../components/Layout/Navbar";
+import Footer from "../components/Layout/Footercontainer/Footer";
 const client = contentful.createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFULSPACE,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFULAPI
+  accessToken: process.env.NEXT_PUBLIC_CONTENTFULAPI,
 });
 
 function jobPage() {
@@ -49,6 +49,7 @@ function jobPage() {
             />
           ))
         : null}
+      <Footer />
     </>
   );
 }

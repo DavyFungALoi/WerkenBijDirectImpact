@@ -9,10 +9,16 @@ export default function Navbar() {
             <li className="nav__bar_item">Home</li>
           </Link>
           <Link href="/jobs">
-            <li className="nav__bar_item">Jobs</li>
+            <li className="nav__bar_item">Vacancies</li>
           </Link>
-          <Link href="/about">
-            <li className="nav__bar_item">About</li>
+          <Link href="/academy">
+            <li className="nav__bar_item">Academy</li>
+          </Link>
+          <Link href="/jobalert">
+            <li className="nav__bar_item">Jobalert</li>
+          </Link>
+          <Link href="/about/directimpact">
+            <li className="nav__bar_item">About us</li>
           </Link>
           <Link href="/contact">
             <li className="nav__bar_item">Contact</li>
