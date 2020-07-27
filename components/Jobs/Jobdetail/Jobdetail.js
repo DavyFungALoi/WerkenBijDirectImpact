@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function Jobdetail() {
-    return (
-        <div>
-            Jobdetail
-        </div>
-    )
+export default function Jobdetail(props) {
+    console.log(props.title)
+  return (
+    <div>
+      Jobdetail
+      <div>{props.title}</div>
+    </div>
+  );
 }

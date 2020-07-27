@@ -8,7 +8,7 @@ export default function Navbar() {
           <Link href="/">
             <li className="nav__bar_item">Home</li>
           </Link>
-          <Link href="/jobs">
+          <Link href="/vacancies">
             <li className="nav__bar_item">Vacancies</li>
           </Link>
           <Link href="/academy">

@@ -1,8 +1,20 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+.homepage__container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.joboverview__container {
+  max-width: 960px;
+  margin: auto;
 }
 
 .jobpage__container__categories__container__category {
@@ -12,7 +24,7 @@ html {
   background: #fff;
   border-radius: 3px;
   border: 1px solid #999;
-  cursor: pointer;
+  
 }
 
 .nav__bar__container {
@@ -32,61 +44,48 @@ html {
   cursor: pointer;
 }
 
-.footer__container_wrapper{
+.footer__container_wrapper {
   max-width: 960px;
   margin: auto;
-
 }
 
-.footer__top__container{
+.footer__top__container {
   background-color: red;
   display: flex;
   justify-content: space-between;
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
- 
-
-
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
 }
 
 .footer__top__item {
   cursor: pointer;
   color: white;
   list-style: none;
-
 }
 
-.footer__bottom__container{
+.footer__bottom__container {
   background-color: red;
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
-  background:#999;
- 
-  
-
-
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background: #999;
 }
-.footer__bottom__container_list{
+.footer__bottom__container_list {
   display: flex;
   justify-content: space-between;
-  
-
-
 }
-.footer__bottom__container_list_item{
+.footer__bottom__container_list_item {
   color: white;
   list-style: none;
   font-size: 0.65rem;
   cursor: pointer;
-
 }
-.footer__bottom__container_list_copyright{
+.footer__bottom__container_list_copyright {
   color: white;
   list-style: none;
   font-size: 0.85rem;

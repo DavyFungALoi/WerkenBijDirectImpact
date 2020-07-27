@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import * as contentful from "contentful";
-import Navbar from "../components/Layout/Navbar";
-import Footer from "../components/Layout/Footercontainer/Footer";
-import Homepage from "../components/Homepage/Homepage";
+import Job from "../../components/Jobs/Joboverview";
+import Navbar from "../../components/Layout/Navbar";
+import Footer from "../../components/Layout/Footercontainer/Footer";
 const client = contentful.createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFULSPACE,
   accessToken: process.env.NEXT_PUBLIC_CONTENTFULAPI,
@@ -34,9 +34,24 @@ function jobPage() {
         <link />
       </Head>
 
-      <Navbar />
-
-      <Homepage />
+      <div>
+        <Navbar />
+      </div>
+      <div className="joboverview__container">
+      <div>Job Overview</div>
+      {jobs.length > 0
+        ? jobs.map((job) => (
+            <Job
+              date={job.fields.date}
+              key={job.sys.id}
+              url={job.fields.url}
+              title={job.fields.title}
+              location={job.fields.jobLocation}
+              categories={job.fields.jobCategory}
+            />
+          ))
+        : null}
+        </div>
       <Footer />
     </>
   );
